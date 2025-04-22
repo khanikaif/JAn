@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hey Wifeyy 😘</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #ce70c3, #e91b1b);
+      font-family: 'Segoe Script', cursive;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+      color: #1d1c1d;
+    }
+
+    h1 {
+      font-size: 3em;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    p {
+      font-size: 1.5em;
+      margin: 20px 0;
+    }
+
+    button {
+      padding: 12px 25px;
+      font-size: 1.2em;
+      background-color: #0a0a0a;
+      border: none;
+      border-radius: 20px;
+      color: white;
+      cursor: pointer;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #ff0000;
+      transform: scale(1.1);
+    }
+
+    .flirty-line {
+      font-size: 1.6em;
+      margin-top: 20px;
+      color: #000000;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Hey Begham Ji 😍</h1>
+  <p>Wanna hear something flirty? 😏</p>
+  <button onclick="flirt()">Yes, make me blush 💖</button>
+  <div class="flirty-line" id="flirtyLine"></div>
+
+  <script>
+    const flirtyLines = [
+      "Are you French? Because Eiffel for you. 😘",
+      "You're the reason I smile at my phone like an idiot. 📱❤️",
+      "If kisses were snowflakes, I'd send you a blizzard. ❄️💋",
+      "You're my favorite distraction. 😏",
+      "Girl, you’re hotter than the bottom of my laptop. 🔥",
+      "You're the queen of my heart—and my screen. 👑❤️",
+      "Every love song reminds me of you. 🎶💓"
+    ];
+
+    function flirt() {
+      const randomLine = flirtyLines[Math.floor(Math.random() * flirtyLines.length)];
+      document.getElementById("flirtyLine").textContent = randomLine;
+    }
+  </script>
+
+</body>
+</html>
